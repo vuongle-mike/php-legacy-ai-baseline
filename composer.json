@@ -1,0 +1,17 @@
+{
+  "name": "vuongle-mike/php-legacy-ai-baseline",
+  "description": "Intentionally vulnerable PHP modernization benchmark",
+  "license": "MIT",
+  "require": {
+    "php": "~7.4.0",
+    "ext-pdo": "*",
+    "ext-pdo_sqlite": "*",
+    "twig/twig": "1.44.0"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4.33"
+    },
+    "allow-plugins": false
+  }
+}

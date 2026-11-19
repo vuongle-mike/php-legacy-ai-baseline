@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /app/var
+    init: true
+    entrypoint: ["sh", "-c", "php bin/reset.php && exec php -S 0.0.0.0:8080 -t public"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
