@@ -4,7 +4,7 @@
 
 ## Stack baseline
 
-- PHP **7.4.33** (EOL: https://www.php.net/eol.php).
+- PHP **8.2.35** (bản vá CVE-2026-109618 / CVE-2026-109619; tag `baseline-v1.0.0` vẫn dùng PHP 7.4.33).
 - Twig **1.44.0**, cố định trong composer.lock; dùng API Twig 1.x thực tế.
 - SQLite, session login, tìm kiếm, tạo/xem/xóa ghi chú và tải file.
 - Chỉ dữ liệu giả; tài khoản `alice / alice-demo`, `bob / bob-demo`.
